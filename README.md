@@ -4,7 +4,7 @@ A serverless, medallion-architecture data pipeline on AWS that ingests YouTube t
 
 The pipeline was originally built around a static Kaggle "YouTube Trending" CSV/JSON dataset (per-region video stats + category reference data), and was later extended with a **live YouTube Data API v3 ingestion Lambda**, so the same Silver/Gold logic works for both historical backfill and ongoing real-time ingestion.
 
-![Apache Spark](https://img.shields.io/badge/Apache_Spark-E25A1C?logo=apachespark&logoColor=white))
+![Apache Spark](https://img.shields.io/badge/Apache_Spark-E25A1C?logo=apachespark&logoColor=white)
 
 ---
 
