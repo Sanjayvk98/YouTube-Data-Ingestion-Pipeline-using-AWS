@@ -4,6 +4,17 @@ A serverless, medallion-architecture data pipeline on AWS that ingests YouTube t
 
 The pipeline was originally built around a static Kaggle "YouTube Trending" CSV/JSON dataset (per-region video stats + category reference data), and was later extended with a **live YouTube Data API v3 ingestion Lambda**, so the same Silver/Gold logic works for both historical backfill and ongoing real-time ingestion.
 
+[![Python](https://shields.io)](https://python.org)
+[![Apache Spark](https://shields.io)](https://apache.org)
+[![Pandas](https://shields.io)](https://pydata.org)
+[![YouTube API](https://shields.io)](https://google.com)
+
+---
+
+<img width="1024" height="567" alt="YouTube data pipeline arch without using AWS crawler" src="https://github.com/user-attachments/assets/985d3506-bbb1-4f91-8485-e626f1fc4ac7" />
+
+
+
 ---
 
 ## Architecture
@@ -91,8 +102,6 @@ Orchestrated end-to-end by an **AWS Step Functions** state machine, with **SNS a
 5. Deploy `lambdas/yt-api-ingestion` and `lambdas/json_to_parquet` with the environment variables documented in each file's docstring.
 6. Deploy `data_quality/dq_lambda.py` and attach the SNS topic for alerts.
 7. Import `step_functions/pipeline_orchestration.json` as a Step Functions state machine, attaching the IAM policy in `iam_permissions_inline_policies/`.
-
-> **Before pushing to a public repo:** replace the hardcoded AWS account ID in `step_functions/pipeline_orchestration.json` and `Scripts/information.md` with a placeholder — see the project report for details.
 
 ## Screenshots
 
