@@ -23,6 +23,11 @@ The project also tells an honest infrastructure story: it was originally designe
 
 <img width="1024" height="567" alt="YouTube data pipeline arch without using AWS crawler v0" src="https://github.com/user-attachments/assets/13c412b8-8d1f-4499-ba0d-607cf22b7306" />
 
+------------------------------------------------------------------------------------------------------------------------
+
+<img width="1024" height="567" alt="YouTube data pipeline arch using AWS crawler" src="https://github.com/user-attachments/assets/03344c47-e25e-4a3e-8bbf-6a421732a149" />
+
+
 
 | Stage | Service | What happens |
 |---|---|---|
