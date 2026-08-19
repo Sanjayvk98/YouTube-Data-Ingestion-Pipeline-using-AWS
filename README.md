@@ -21,7 +21,7 @@ The project also tells an honest infrastructure story: it was originally designe
 
 ## 🏗️ Architecture
 
-![Architecture Diagram](<img width="1024" height="567" alt="YouTube data pipeline arch without using AWS crawler v0" src="https://github.com/user-attachments/assets/13c412b8-8d1f-4499-ba0d-607cf22b7306" />
+(<img width="1024" height="567" alt="YouTube data pipeline arch without using AWS crawler v0" src="https://github.com/user-attachments/assets/13c412b8-8d1f-4499-ba0d-607cf22b7306" />
 )
 
 | Stage | Service | What happens |
